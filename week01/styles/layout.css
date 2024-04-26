@@ -1,9 +1,11 @@
-header {
+header p {
     background-color: teal;
     color: white;
     height: 5em;
     padding-left: 10px;
     padding-top: 3px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
 }
 
 div.nav {

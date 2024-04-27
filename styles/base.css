@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #226666;
+    --secondary-color: #003333;
+    --accent-color: #669999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    box-sizing: border-box;
+}
+
+main h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.card {
+    margin: 15px;
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+.card h1 {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card h2 {
+    padding-top: 1rem;
+}
+
+.card p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+}
+
+.card img {
+    width: 200px;
+    float: right;
+    padding: 1rem;
+}
+
+.img2 {
+    float: left;
+    padding: 1rem;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div {
+    align-self: center;
+    padding-top: 15px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

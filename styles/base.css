@@ -52,6 +52,8 @@ main {
     display: grid;
     grid-template-columns: 65% 35%;
     box-sizing: border-box;
+    max-width: 90%;
+    
 }
 
 main h2 {

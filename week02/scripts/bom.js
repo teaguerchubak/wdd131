@@ -1,16 +1,26 @@
-// Creating variables from already created html items
-const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
-const list = document.querySelector('ui');
+    const input = document.querySelector('#favchap');
+    const button = document.querySelector('button');
+    const list = document.querySelector('#list');
 
-// Creating completely new variables/items
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
+button.addEventListener('click', function() {
+    if (input.value.trim() !== '') {
+        
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
 
-// Populating the newly created variables/items
-li.textContent = input.value;
-deleteButton.textContent = '❌';
+        li.textContent = input.value;
+        deleteButton.textContent = '❌';
 
-//Appending
-li.append(deleteButton);
-list.append(li);
+        li.append(deleteButton);
+        list.append(li);
+
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            input.focus();
+        })
+    }
+    else input.focus();
+});
+
+input.value = '';
+input.focus();

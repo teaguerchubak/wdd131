@@ -85,11 +85,3 @@ footer {
     text-align: center;
 }
 
-nav::before {
-    content: "☰"
-}
-
-nav.show::before {
-    content: "✖"
-}
-

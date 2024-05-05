@@ -84,3 +84,12 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+nav::before {
+    content: "☰"
+}
+
+nav.show::before {
+    content: "✖"
+}
+

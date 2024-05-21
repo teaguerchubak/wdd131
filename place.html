@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Teaguer Chubak | WDD131 | Place</title>
-        <meta name="description" content="Place | A page about a country">
-        <meta name="author" content="Teaguer Chubak">
-        
-        <link rel="stylesheet" href="styles/place.css">
-        <link rel="stylesheet" href="">
-        <script src="scripts/place.js" defer></script>
-        <script src="scripts/getdates.js" defer></script>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaguer Chubak | WDD131 | Place</title>
+    <meta name="description" content="Place | A page about a country">
+    <meta name="author" content="Teaguer Chubak">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
@@ -19,25 +24,55 @@
         <h1>Canada</h1>
     </header>
 
-    <div class="hero">
-        <picture>
-            <source srcset="images/place-large.webp" media="(min-width: 1000px)">
-            <img src="images/place-small.webp" alt="Ontario Canada" width="" height="">
-        </picture>
-    </div>
+    <main>
 
-    <div class="data">
-        <h2>Data</h2>
-        <p class="label">Area:</p> <p class="value">Something</p>
-        <p class="label">Population:</p>
-        <p class="label">Capital:</p>
-        <p class="label">Languages:</p>
-        <p class="label">Currency:</p>
-        <p class="label">Time Zone:</p>
-        <p class="label">Calling Code:</p>
-        <p class="label">Internet TLD:</p>
-    </div>
-    
+        <div class="hero">
+            <picture>
+                <source srcset="images/place-large.webp" media="(min-width: 750px)">
+                <img src="images/place-small.webp" alt="Ontario Canada" width="" height="">
+            </picture>
+        </div>
+
+        <div class="data">
+            <h2>Data</h2>
+            <p class="label1">Area:</p>
+            <p class="value1">9,984,670 sq km</p>
+            <p class="label1">Population:</p>
+            <p class="value1">40,769,890</p>
+            <p class="label1">Capital:</p>
+            <p class="value1">Ottawa</p>
+            <p class="label1">Languages:</p>
+            <p class="value1">English, French</p>
+            <p class="label1">Currency:</p>
+            <p class="value1">Canadian Dollar (CAD)</p>
+            <p class="label1">Time Zone:</p>
+            <p class="value1">UTC-3.5 to -8</p>
+            <p class="label1">Calling Code:</p>
+            <p class="value1">+1</p>
+            <p class="label1">Internet TLD:</p>
+            <p class="value1">.ca</p>
+        </div>
+
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.png" alt="Weather Symbol" class="weather-symbol">
+            <p class="label2">Temperature:</p>
+            <p class="value2">10°C</p>
+            <p class="label2">Conditions:</p>
+            <p class="value2">Mostly Cloudy</p>
+            <p class="label2">Wind:</p>
+            <p class="value2">9 km/h</p>
+            <p class="label2">Wind Chill:</p>
+            <p class="value2" id="windchill"></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Teaguer Chubak | Canada</p>
+        <p>Last Modified: <span id="lastModified"></span>
+    </footer>
+
 </body>
 
 </html>

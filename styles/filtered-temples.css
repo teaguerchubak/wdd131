@@ -64,19 +64,19 @@ main h2 {
 
 .temple-grid {
     display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 25px;
+    padding: 25px;
 }
 
-figure {
+.card {
     text-align: center;
+    background-color: var(--accent-color);
+    padding: 10px;
 }
 
-figure img {
-    width: 250px;
-    height: auto;
-    margin: .5rem;
+.label {
+    font-weight: 700;
 }
 
 footer {

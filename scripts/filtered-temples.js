@@ -90,41 +90,41 @@ home.addEventListener("click", () => {
 
 const old = document.querySelector("#old");
 old.addEventListener("click", () => {
-    createCard(temples.filter(item => Date(item.dedicated).getFullYear() < 1900));
+    createCard(temples.filter(temple => Date(temple.dedicated).getFullYear() < 1900));
     document.querySelector(".buttonheading").textContent = "Old";
 })
 
 const news = document.querySelector("#news");
 news.addEventListener("click", () => {
-    createCard(temples.filter(item => Date(item.dedicated).getFullYear() > 2000));
+    createCard(temples.filter(temple => Date(temple.dedicated).getFullYear() > 2000));
     document.querySelector(".buttonheading").textContent = "New";
 })
 
 const large = document.querySelector("#large");
 large.addEventListener("click", () => {
-    createCard(temples.filter(item => item.area > 90000));
+    createCard(temples.filter(temple => temple.area > 90000));
     document.querySelector(".buttonheading").textContent = "Large";
 })
 
 const small = document.querySelector("#small");
 small.addEventListener("click", () => {
-    createCard(temples.filter(item => item.area < 10000));
+    createCard(temples.filter(temple => temple.area < 10000));
     document.querySelector(".buttonheading").textContent = "Small";
 })
 
 
 
-const createCard = (list) => {
+const createCard = (templeList) => {
     const box = document.querySelector(".temple-grid");
     box.innerHTML="";
-    list.forEach(item => {
+    templeList.forEach(temple => {
         box.innerHTML += `
         <div class="card">
-            <h3>${item.templeName}</h3>
-            <p>Location: ${item.location}</p>
-            <p>Dedicated: ${item.dedicated}</p>
-            <p>Area: ${item.area}</p>
-            <img src="${item.imageUrl}" alt="${item.templeName} Temple" loading="lazy" width="500" height="200">
+            <h3>${temple.templeName}</h3>
+            <p><span class="label">Location:</span> ${temple.location}</p>
+            <p><span class="label">Dedicated:</span> ${temple.dedicated}</p>
+            <p><span class="label">Area:</span> ${temple.area}</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="400" height="250">
         </div>`;
     })
 }

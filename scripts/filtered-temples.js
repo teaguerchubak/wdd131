@@ -130,4 +130,4 @@ const createCard = (templeList) => {
 }
 
 
-makeCards(temples);
+createCard(temples);

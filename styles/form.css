@@ -55,7 +55,7 @@ footer {
 
 .form1 input[type="text"],
 .form1 input[type="date"],
-.form1 input[type="textarea"],
+textarea,
 .form1 select {
     background-color: #eee;
     display: block;

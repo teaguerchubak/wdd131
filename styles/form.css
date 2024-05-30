@@ -10,6 +10,12 @@
     box-sizing: border-box;
 }
 
+form {
+    width: 420px;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     font-weight: 700;
     background-color: var(--primary-color);
@@ -28,6 +34,8 @@ body {
 main {
     padding: 0 2%;
     min-height: 20rem;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -80,7 +88,7 @@ textarea,
 }
 
 .optional {
-    color: rgb(156, 65, 156);
+    color: rgb(48, 5, 48);
 }
 
 textarea {

@@ -83,7 +83,7 @@ textarea,
     color: rgb(156, 65, 156);
 }
 
-.form1 input[type="textarea"] {
+textarea {
     margin-bottom: 1rem;
 }
 
@@ -103,34 +103,22 @@ textarea,
 
 
 input[type="radio"] {
-	display: none;
 	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
 }
 
 .stars {
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: left;
+	flex-direction: row;
+	justify-content: space-between;
+    padding-bottom: 1rem;
+    font-size: smaller;
+    max-width: 350px;
 }
 
 .stars > label {
 	width: 30px;
 	height: 30px;
-	font-size: 2rem;
+	font-size: 1rem;
 	display: flex;
 	align-items: flex-end;
-	caret-color: rgba(0, 0, 0, 0);
-}
-
-.stars > label:hover {
-	color: #000;
-}
-
-.stars > label::before {
-	content: "\2606";
-}
-
-.stars input:checked ~ label::before {
-	content: "\2605";
 }

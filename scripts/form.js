@@ -1,5 +1,3 @@
-
-
 function LoadItems() {
 
     const products = [
@@ -40,6 +38,8 @@ function LoadItems() {
     });
 }
 
+
+let reviewCounter = 0;
 const counter = document.querySelector(".counter");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -47,8 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
   
     if (pathname.includes("form.html")) {
       LoadItems();
+
     } else if (pathname.includes("review.html")) {
-      reviewCounter ++;
+      reviewCounter = parseInt(localStorage.getItem("reviews")) || 0;
+      reviewCounter++;
       counter.textContent = reviewCounter;
       localStorage.setItem("reviews", reviewCounter);
     }

@@ -1,4 +1,4 @@
-const form = document.querySelector(".form");
+
 
 function LoadItems() {
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pathname = window.location.pathname;
   
     if (pathname.includes("form.html")) {
-      createOptions();
+      LoadItems();
     } else if (pathname.includes("review.html")) {
       reviewCounter ++;
       counter.textContent = reviewCounter;

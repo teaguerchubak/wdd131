@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #226666;
+    --secondary-color: #003333;
+    --accent-color: #669999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+.form1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid --primary-color;
+    background-color: #b3dbdb;
+    border-radius: 3px;
+    padding: .5rem 2%;
+}
+
+.form1 label {
+    display: block;
+    font-size: .9rem;
+}
+
+.form1 input[type="text"],
+.form1 input[type="date"],
+.form1 input[type="textarea"],
+.form1 select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding: .5rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form1 div {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.form1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.checkall {
+    display: block;
+    padding-bottom: .5rem;
+    font-style: italic;
+}
+
+.optional {
+    color: rgb(156, 65, 156);
+}
+
+.form1 input[type="textarea"] {
+    margin-bottom: 1rem;
+}
+
+.form1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--accent-color), var(--primary-color));
+    color: #fff;
+    border-radius: 3px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin-top: 1rem;
+    font-size: larger;
+}
+
+
+
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	display: flex;
+	align-items: flex-end;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Teaguer Chubak</title>
+    <meta name="description" content="Teaguer Chubak | WDD 131 | Form Assignment">
+    <meta name="author" content="Teaguer Chubak">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+
+        <form method="get" action="review.html" class="form1">
+            <fieldset>
+                <label>Product Name* 
+                    <select id="product" name="product-name" required>
+                        <option value="">Select a Product ...</option>
+                    </select>
+                </label>
+
+                <div>Overall Rating* </div>
+                <div class="stars">
+                <label><input type="radio" id="1star" name="rating" value="1" required></label>
+                <label><input type="radio" id="2star" name="rating" value="2" required></label>
+                <label><input type="radio" id="3star" name="rating" value="3" required></label>
+                <label><input type="radio" id="4star" name="rating" value="4" required></label>
+                <label><input type="radio" id="5star" name="rating" value="5" required></label>
+                </div>
+
+                <label class="installation">Date of Installation* <input type="date" id="date" name="date" required></label>
+
+                <div>Which features did you find useful? <span class="checkall">(Check all that apply)</span></div>
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" id="easeofuse" name="easeofuse" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+
+                <div>Written Review <span class="optional">(Optional)</span></div>
+                <label><input type="textarea" id="review" name="review"></label>
+
+                <label>Username <span class="optional">(Optional)</span><input type="text" id="username" name="username"></label>
+                
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Teaguer Chubak | Canada</p>
+        <p>Last Modified: <span id="lastModified"></span>
+    </footer>
+    
+</body>
+
+</html>

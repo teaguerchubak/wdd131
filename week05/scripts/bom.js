@@ -29,10 +29,10 @@ function displayList(item) {
     li.textContent = item;
     deleteButton.textContent = '❌';
     deleteButton.classList.add('delete');
-    li.append(deletebutton);
+    li.append(deleteButton);
     list.append(li);
 
-    deletebutton.addEventListener('click', function () {
+    deleteButton.addEventListener('click', function () {
         list.removeChild(li);
         deleteChapter(li.textContent);
         input.focus();

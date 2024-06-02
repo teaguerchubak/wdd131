@@ -245,9 +245,8 @@ footer p {
     display: block;
     animation-name: zoom;
     animation-duration: 0.6s;
-    height: 80vh;
-    width: 90vw;
-    max-width: 700px;
+    height: 70vh;
+    max-width: 90vw;
     object-fit: contain;
 }
 

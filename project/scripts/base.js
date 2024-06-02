@@ -164,10 +164,29 @@ const createCard = (flyerList) => {
     flyerList.forEach(flyers => {
         box.innerHTML += `
         <div class="card">
-            <img src="${flyers.imageUrl}" alt="${flyers.date}" loading="lazy">
+            <img src="${flyers.imageUrl}" alt="${flyers.date}" loading="lazy" id="myImg">
         </div>`;
     })
 }
-
-
 createCard(flyers);
+
+
+
+
+/* MODAL CODE */
+
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var images = document.querySelectorAll(".flyers-grid img");
+
+images.forEach(function(img) {
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    };
+});
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+};

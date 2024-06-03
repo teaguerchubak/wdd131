@@ -153,9 +153,10 @@ footer p {
     color: white;
 }
 
-.month-box p {
+.future-p {
     font-size: larger;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .month-box ul {
@@ -166,7 +167,7 @@ footer p {
 
 .accordion {
     cursor: pointer;
-    border: none;
+    border: 1px solid var(--color-darkblue);
     padding: 10px;
     width: 100%;
     text-align: left;
@@ -281,3 +282,57 @@ footer p {
         width: 100%;
     }
 }
+
+
+
+/* MUSIC PAGE CODE */
+
+.album-container {
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    background-color: var(--color-gray);
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    padding: 1rem;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.album-title {
+    text-align: left;
+}
+
+#spotify {
+    background-image: url("../images/spotify.webp");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    color: var(--color-darkblue);
+}
+
+.futureshows.no-border {
+    border: none;
+}
+
+.tracklist {
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.album-container img {
+    max-width: 400px;
+    height: auto;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: first baseline;
+    padding-top: 1rem;
+}
+
+.lyrics {
+    padding: 1rem 0;
+}
+
+/* added spotify */
+

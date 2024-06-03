@@ -105,6 +105,11 @@ footer p {
     justify-self: center;
 }
 
+.footer-nav img {
+    height: 40px;
+    width: auto;
+}
+
 
 
 
@@ -128,7 +133,7 @@ footer p {
 }
 
 .futureshows {
-    max-width: 600px;
+    width: 500px;
 }
 
 .pastshows {

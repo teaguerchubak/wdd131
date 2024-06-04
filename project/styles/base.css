@@ -4,12 +4,24 @@
     --color-gray: #7a93ac;
     --color-lightred: #e9cbcb;
     --color-lightblue: #b7d0eb;
+    --font-Oswald: 'Oswald', sans-serif;
+    --font-Kanit: 'Kanit', sans-serif;
 }
 
 * {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -23,6 +35,17 @@ header {
 
 header h1 {
     justify-self: center;
+    font-family: var(--font-Oswald);
+}
+
+h2 {
+    font-family: var(--font-Kanit);
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--font-Oswald);
+    font-weight: 500;
 }
 
 .nav, .footer-nav {
@@ -32,6 +55,8 @@ header h1 {
     font-size: larger;
     background-color: var(--color-lightblue);
     border-radius: 3px;
+    font-family: var(--font-Kanit);
+    font-weight: bold;
 }
 
 .nav a, .footer-nav a {
@@ -52,6 +77,8 @@ main {
     display: grid;
     justify-content: center;
     max-width: 90%;
+    flex: 1;
+    font-family: var(--font-Kanit);
 }
 
 .bio {
@@ -100,6 +127,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    font-family: var(--font-Kanit);
+    font-weight: lighter;
 }
 
 footer p {
@@ -145,6 +174,7 @@ footer p {
     border: var(--color-darkblue) solid 3px;
     min-width: 400px;
     margin: 1rem;
+    margin-top: 2rem;
 }
 
 .month {
@@ -350,6 +380,7 @@ form {
     padding-right: 2rem;
     border-radius: 3px;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 legend {
@@ -406,4 +437,31 @@ textarea {
 
 .writt {
     margin-top: 1rem;
+}
+
+
+
+/* SUBMISSION PAGE */
+
+.sub-container {
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    max-width: 850px;
+    background-color: var(--color-gray);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.sub-container h2 {
+    background-color: var(--color-lightblue);
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.sub-container p {
+    background-color: var(--color-lightblue);
+    padding: 1rem;
+    text-align: center;
 }

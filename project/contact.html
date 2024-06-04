@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Teaguer Chubak | Final Project</title>
+        <meta name="description" content="Teaguer's Music | Shows">
+        <meta name="author" content="Teaguer Chubak">
+    
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/base.js" defer></script>
+    </head>
+<body>
+
+    <header id="header">
+        <h1>Teaguer Chubak's Music</h1>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="shows.html">Shows</a>
+            <a href="music.html">Music</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main class="contact-main">
+
+        <h2>Contact Teaguer Chubak</h2>
+
+        <form method="get" action="submission.html" class="form">
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label>Name* <input type="text" id="name" name="name" required></label>
+                <label>Email* <input type="email" id="email" name="email" required></label>
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Sign up for Teaguer's newsletter!</label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Message</legend>
+                <label>Subject* 
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a Subject ...</option>
+                        <option value="Booking">Booking</option>
+                        <option value="Streaming">Streaming Music</option>
+                        <option value="Merch">Merch</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+
+                <label class="writt">Message*<textarea id="review" name="review" required></textarea></label>
+
+                <input type="submit" value="Send Message">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Teaguer Chubak</p>
+        <div class="footer-nav">
+            <a href="https://www.instagram.com/petr_chubak/" target="_blank" id="hover-inst"><img src="images/instagram-small.webp" alt="Instagram" id="hover-instagram"></a>
+            <a href="https://www.youtube.com/@petrchubak5342" target="_blank" id="hover-you"><img src="images/youtube-small.webp" alt="YouTube" id="hover-youtube"></a>
+            <a href="https://petrchubak.bandcamp.com/" target="_blank" id="hover-band"><img src="images/bandcamp-small.webp" alt="Bandcamp" id="hover-bandcamp"></a>
+            <a href="https://www.tiktok.com/@petr_chubak" target="_blank" id="hover-tik"><img src="images/tiktok-small.webp" alt="TikTok" id="hover-tiktok"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

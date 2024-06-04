@@ -16,6 +16,48 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+/* FOOTER HOVER IMAGES */
+
+const hoverInst = document.getElementById(`hover-inst`);
+const hoverInstagram = document.getElementById(`hover-instagram`);
+
+const hoverYou = document.getElementById(`hover-you`);
+const hoverYoutube = document.getElementById(`hover-youtube`);
+
+const hoverBand = document.getElementById(`hover-band`);
+const hoverBandcamp = document.getElementById(`hover-bandcamp`);
+
+const hoverTik = document.getElementById(`hover-tik`);
+const hoverTiktok = document.getElementById(`hover-tiktok`);
+
+hoverInst.addEventListener('mouseover', () => {
+    hoverInstagram.src = 'images/instagram-inverted.webp';
+});
+hoverInst.addEventListener('mouseout', () => {
+    hoverInstagram.src = 'images/instagram-small.webp';
+});
+
+hoverYou.addEventListener('mouseover', () => {
+    hoverYoutube.src = 'images/youtube-inverted.webp';
+});
+hoverYou.addEventListener('mouseout', () => {
+    hoverYoutube.src = 'images/youtube-small.webp';
+});
+
+hoverBand.addEventListener('mouseover', () => {
+    hoverBandcamp.src = 'images/bandcamp-inverted.webp';
+});
+hoverBand.addEventListener('mouseout', () => {
+    hoverBandcamp.src = 'images/bandcamp-small.webp';
+});
+
+hoverTik.addEventListener('mouseover', () => {
+    hoverTiktok.src = 'images/tiktok-inverted.webp';
+});
+hoverTik.addEventListener('mouseout', () => {
+    hoverTiktok.src = 'images/tiktok-small.webp';
+});
+
 
 /* SHOWS PAGE */
 

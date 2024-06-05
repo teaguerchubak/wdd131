@@ -107,6 +107,10 @@
 
     /* CONTACT PAGE */
 
+    .contact-main h2 {
+        text-align: center;
+    }
+
     form {
         width: 100%;
         padding-left: 1rem;

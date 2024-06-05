@@ -84,8 +84,7 @@ main {
 .bio {
     justify-content: center;
     align-items: center;
-    min-width: 400px;
-    max-width: 850px;
+    width: 850px;
     background-color: var(--color-gray);
     margin: 1rem;
     display: grid;
@@ -321,11 +320,10 @@ footer p {
 .album-container {
     justify-content: center;
     align-items: center;
-    min-width: 400px;
+    min-width: 800px;
     background-color: var(--color-gray);
     display: grid;
-    grid-template-columns: 1fr 40px 1fr;
-    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     margin: 1rem auto;
 }
@@ -353,12 +351,12 @@ footer p {
 }
 
 .album-container img {
-    max-width: 400px;
-    height: auto;
-    grid-column: 3/4;
+    width: 400px;
+    height: 400px;
+    grid-column: 2/3;
     justify-self: center;
     align-self: first baseline;
-    padding-top: 1rem;
+    padding: 2rem;
 }
 
 .lyrics {

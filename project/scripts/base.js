@@ -20,15 +20,23 @@ for (i = 0; i < acc.length; i++) {
 
 const hoverInst = document.getElementById(`hover-inst`);
 const hoverInstagram = document.getElementById(`hover-instagram`);
+hoverInstagram.width = 40;
+hoverInstagram.height = 40;
 
 const hoverYou = document.getElementById(`hover-you`);
 const hoverYoutube = document.getElementById(`hover-youtube`);
+hoverYoutube.width = 40;
+hoverYoutube.height = 40;
 
 const hoverBand = document.getElementById(`hover-band`);
 const hoverBandcamp = document.getElementById(`hover-bandcamp`);
+hoverBandcamp.width = 40;
+hoverBandcamp.height = 40;
 
 const hoverTik = document.getElementById(`hover-tik`);
 const hoverTiktok = document.getElementById(`hover-tiktok`);
+hoverTiktok.width = 40;
+hoverTiktok.height = 40;
 
 hoverInst.addEventListener('mouseover', () => {
     hoverInstagram.src = 'images/instagram-inverted.webp';

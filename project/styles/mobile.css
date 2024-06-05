@@ -1,0 +1,178 @@
+@media screen and (max-width: 500px) {
+    .bio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .bio h2, .bio p, .bio img {
+        grid-row: unset;
+        grid-column: unset;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .bio p {
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    .bio img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* SHOW PAGE */
+    
+    .futureshows, .pastshows {
+        padding: 1rem;
+        position: relative;
+        margin: 1rem;
+        margin-bottom: 3rem;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .futureshows h2, .pastshows h2 {
+        position: absolute;
+        top: -25px;
+        background: white;
+        border: var(--color-darkblue) solid 3px;
+        padding: 5px;
+    }
+    
+    .futureshows {
+        border: var(--color-darkblue) solid 3px;
+        width: 400px;
+    }
+    
+    .pastshows {
+        width: 400px;
+    }
+    
+    .month-box {
+        border: var(--color-darkblue) solid 3px;
+        min-width: 350px;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+
+
+
+    /* MUSIC PAGE */
+
+    .music-h2 {
+        text-align: center;
+    }
+
+    .album-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-width: auto;
+        margin: 1rem;
+    }
+
+    .album-container img {
+        width: 95%;
+        grid-column: 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .futureshows.no-border {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tracklist {
+        grid-column: 1;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .album-title {
+        text-align: center;
+    }
+
+
+
+
+    /* CONTACT PAGE */
+
+    form {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .form fieldset {
+        margin: 1rem 0;
+        padding: .5rem 1rem;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    textarea,
+    .form select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form input[type="submit"] {
+        width: 100%;
+        max-width: 100%;
+        padding: .5rem;
+        font-size: medium;
+    }
+
+
+
+    /* NAV */
+
+    .nav {
+        flex-direction: column;
+        width: 3rem;
+        justify-self: last baseline;
+    }
+
+    .nav.expanded {
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+        width: 3rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav.expanded .menu-icon {
+        width: 100%;
+    }
+
+    .nav.expanded .nav-links {
+        display: flex;
+    }
+}

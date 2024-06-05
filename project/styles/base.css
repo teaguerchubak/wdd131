@@ -72,6 +72,16 @@ h3 {
     background-color: var(--color-darkblue);
 }
 
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 main {
     margin: 1rem;
     display: grid;

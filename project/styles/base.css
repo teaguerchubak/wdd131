@@ -82,6 +82,10 @@ h3 {
     width: 100%;
 }
 
+.menu-icon {
+    display: none;
+}
+
 main {
     margin: 1rem;
     display: grid;

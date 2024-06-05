@@ -166,7 +166,7 @@ footer p {
 }
 
 .pastshows {
-    max-width: 80%;
+    width: 1200px;
 }
 
 .month-box {
@@ -238,8 +238,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
-    min-width: 900px;
-    max-width: 1250;
+    width: 1200;
 }
 
 .flyers-grid img {

@@ -333,7 +333,10 @@ footer p {
     text-align: left;
 }
 
-#spotify {
+#musnts-spotify-link,
+#uniswarm-spotify-link,
+#smiling-spotify-link,
+#dumpster-spotify-link {
     background-image: url("../images/spotify.webp");
     display: inline-block;
     width: 30px;
@@ -353,7 +356,7 @@ footer p {
 
 .album-container img {
     width: 400px;
-    height: 400px;
+    height: auto;
     grid-column: 2/3;
     justify-self: center;
     align-self: first baseline;

@@ -1,0 +1,51 @@
+* {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.body-container {
+    max-width: 600px;
+    border: 1px solid gray;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+    margin: 2rem;
+}
+
+h1, h2 {
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: xx-large;
+    line-height: 1;
+}
+
+h2 {
+    font-size: smaller;
+    color: #006EB6;
+    border-bottom: 1px solid lightgray;
+}
+
+main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+li + li {
+    margin-top: 1rem;
+}
+
+footer {
+    margin-top: .5rem;
+}
+
+.logo {
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}

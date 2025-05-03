@@ -6,10 +6,10 @@ themeSelector.addEventListener("change", () => {
     
     if (selection === "light") {
         bodyClass.classList.remove("dark")
-        document.getElementById("logo").src = "logo.webp"
+        document.getElementById("logo").src = "logo.webp";
     }
     else if (selection === "dark") {
         bodyClass.classList.add("dark");
-        document.getElementById("logo").src = "logo-dark.png"
+        document.getElementById("logo").src = "logo-dark.png";
     }
 });

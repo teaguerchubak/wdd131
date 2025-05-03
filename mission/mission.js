@@ -9,7 +9,7 @@ themeSelector.addEventListener("change", () => {
         document.getElementById("logo").src = "logo.webp";
     }
     else if (selection === "dark") {
-        bodyClass.classList.add("dark");
+        document.body.classList.add("dark");
         document.getElementById("logo").src = "logo-dark.png";
     }
 });

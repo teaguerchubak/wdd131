@@ -7,8 +7,14 @@
     <meta name="description" content="The mission statement of Brigham Young University Idaho.">
     <meta name="author" content="Teaguer Chubak">
     <link rel="stylesheet" href="styles.css">
+    <script src="mission.js" defer></script>
 </head>
-<body>
+<body id="body">
+    <select id="theme-select">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+
     <div class="body-container">
         <header>
             <h1>Mission Statement</h1>
@@ -29,7 +35,7 @@
         </main>
 
         <footer>
-            <img src="logo.webp" alt="BYU-I Logo" class="logo">
+            <img src="logo.webp" alt="BYU-I Logo" class="logo" id="logo">
         </footer>
     </div>
 </body>

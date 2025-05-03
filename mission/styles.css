@@ -49,3 +49,12 @@ footer {
     display: block;
     margin: auto;
 }
+
+.dark {
+    background-color: black;
+    color: white;   
+}
+
+.dark h2 {
+    color: #A0D4ED;
+}

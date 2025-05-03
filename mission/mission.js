@@ -5,7 +5,7 @@ themeSelector.addEventListener("change", () => {
     const selection = themeSelector.value;
     
     if (selection === "light") {
-        bodyClass.classList.remove("dark")
+        document.body.classList.remove("dark")
         document.getElementById("logo").src = "logo.webp";
     }
     else if (selection === "dark") {

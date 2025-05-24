@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: end;
+    justify-items: end;
+    max-width: 85%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+}
+
+li {
+    text-decoration: none;
+}
+
+.body-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.article-container {
+    width: 70%;
+}
+
+.article {
+    display: flex;
+    gap: 1rem;
+}
+
+.date-column {
+    width: 30%;
+}
+
+.book-review {
+    width: 70%;
+}
+
+.filter {
+}

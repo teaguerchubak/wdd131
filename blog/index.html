@@ -9,19 +9,26 @@
 
     <link rel="stylesheet" href="blog.css">
     <script src="blog.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Kids Read For Fun</h1>
-        
-        <ul class="main-nav">
-            <li>About</li>
-            <li>Archive</li>
-            <li>Search</li>
-        </ul>
+        <div class="nav-container">
+            <ul class="main-nav">
+                <li>About</li>
+                <li>Archive</li>
+                <li>Search</li>
+            </ul>
+        </div>
+
+        <div class="skiptocontent">
+            <a href="#maincontent">skip to main content</a>
+        </div>
     </header>
 
-    <main>
+    <main id="maincontent">
         <div class="body-container">
             <div class="article-container">
                 <article class="article">
@@ -32,7 +39,7 @@
                         <p class="rating">****</p>
                     </div>
                     <div class="book-review">
-                        <h2>Septimus Heap Book One: Magyk</h2>
+                        <h2 class="book-title">Septimus Heap Book One: Magyk</h2>
                         <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Book cover for Septimus Heap 1">
                         <p class="description">If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
                     </div>
@@ -46,7 +53,7 @@
                         <p class="rating">⭐⭐⭐⭐</p>
                     </div>
                     <div class="book-review">
-                        <h2>Magnus Chase Book One: Sword of Summer</h2>
+                        <h2 class="book-title">Magnus Chase Book One: Sword of Summer</h2>
                         <img src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300" alt="Book cover for Magnus Chase 1">
                         <p class="description">The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.</p>
                     </div>

@@ -1,5 +1,45 @@
+:root {
+    --gold: #EFC69B;
+    --red: #AF1B3F;
+    --dark: #473144;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
 h1 {
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+h2 {
+    color: var(--red);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', Impact, serif;
+}
+
+.nav-container {
+    border-top: solid 3px var(--gold);
+    border-bottom: solid 3px var(--gold);
 }
 
 .main-nav {
@@ -11,35 +51,33 @@ h1 {
     margin: 0 auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-top: solid 3px black;
-    border-bottom: solid 3px black;
 }
 
-li {
-    text-decoration: none;
+.main-nav li {
+    list-style: none;
+    color: var(--red);
+    font-size: larger;
 }
 
 .body-container {
-    display: flex;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
     gap: 2rem;
 }
 
-.article-container {
-    width: 70%;
-}
-
 .article {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
     gap: 1rem;
+    padding-bottom: 4rem;
 }
 
-.date-column {
-    width: 30%;
+img {
+    padding: 1rem;
+    padding-left: 2rem;
 }
 
-.book-review {
-    width: 70%;
-}
-
-.filter {
+p + p {
+    padding-top: 1rem;
 }

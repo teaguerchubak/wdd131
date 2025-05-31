@@ -23,5 +23,42 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
 	}
 ]
+
+const articleContainer = document.querySelector('.article-container');
+
+function createArticles(item) {
+	return `
+		<article class="article">
+            <div class="date-column">
+                <p class="date">${item.date}</p>
+                <p class="ages">${item.ages}</p>
+                <p class="genre">${item.genre}</p>
+                <p class="rating">${item.stars}</p>
+            </div>
+            <div class="book-review">
+                <h2 class="book-title">${item.title}</h2>
+                <img src="${item.imgSrc}" alt="${item.imgAlt}">
+                <p class="description">${item.description}</p>
+            </div>
+        </article>
+	`
+}
+
+articles.forEach(article => {
+	articleContainer.innerHTML += createArticles(article);
+})

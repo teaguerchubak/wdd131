@@ -153,7 +153,8 @@ footer {
 .attribute {
     font-size: 0.6em;
     text-decoration: none;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    padding-bottom: 1rem;
 }
 
 

@@ -79,7 +79,6 @@ button[type="submit"] {
     background-color: white;
     border: solid 1px black;
     border-radius: 5px;
-    padding: 0 .5rem;
     cursor: pointer;
     height: 2rem;
     width: 2rem;
@@ -90,6 +89,7 @@ button[type="submit"] {
 
 .search-img {
     height: 1.5rem;
+    width: 1.5rem;
 }
 
 .recipe-container {
@@ -104,6 +104,7 @@ button[type="submit"] {
 .recipe-img {
     max-width: 100%;
     height: auto;
+    max-height: 600px;
     padding-bottom: .2rem;
 }
 

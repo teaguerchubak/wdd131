@@ -190,7 +190,7 @@ footer {
     }
 
     .description {
-        display: contents;
+        display: block;
     }
 
     footer {

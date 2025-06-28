@@ -94,6 +94,7 @@ button[type="submit"] {
 
 .recipe-container {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     border: solid 1px black;
     border-radius: 5px;

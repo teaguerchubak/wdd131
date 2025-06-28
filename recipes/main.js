@@ -31,6 +31,7 @@ function ratingTemplate(rating) {
 
 function recipeTemplate(item) {
     return `
+        <div class="recipe-container">
         <img class="recipe-img" src="${item.image}">
         <div class="recipe-text">
             <div class="tags">
@@ -40,11 +41,12 @@ function recipeTemplate(item) {
             ${ratingTemplate(item.rating)}
             <p class="description">${item.description}</p>
         </div>
+        </div>
     `
 }
 
 function renderRecipes(recipeList) {
-    const container = document.querySelector(".recipe-container");
+    const container = document.querySelector(".recipe-main");
 
     const html = recipeList.map(recipe => recipeTemplate(recipe)).join('');
 
@@ -57,3 +59,35 @@ function init() {
 }
 
 init();
+
+
+// SEARCH FILTER FUNCTIONS //
+
+function filterRecipes(query) {
+    const filterArray = [];
+
+    recipes.forEach((recipe) => {
+        if (recipe.name.toLowerCase().includes(query) ||
+            recipe.tags.find((item) => item.toLowerCase().includes(query)) ||
+            recipe.description.toLowerCase().includes(query) ||
+            recipe.recipeIngredient.find((item) => item.toLowerCase().includes(query))) {
+        filterArray.push(recipe);
+        }
+    });
+
+    filterArray.sort((a, b) => a.name.localeCompare(b.name));
+
+    renderRecipes(filterArray);
+}
+
+document.querySelector(".search").addEventListener("click", function(e) {
+    e.preventDefault();
+    const input = document.querySelector(".search-input").value.toLowerCase();
+    filterRecipes(input);
+});
+
+document.querySelector(".search-container").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const input = document.querySelector(".search-input").value.toLowerCase();
+    filterRecipes(input);
+});

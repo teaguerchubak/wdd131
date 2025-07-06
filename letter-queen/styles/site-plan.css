@@ -189,3 +189,7 @@ nav a:hover {
   height: 300px;
   width: auto;
 }
+
+.white {
+  color: white;
+}

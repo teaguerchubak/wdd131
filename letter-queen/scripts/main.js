@@ -84,3 +84,15 @@ filterSelect.addEventListener("change", () => {
         generateGallery(filterArray);
     }
 });
+
+
+/* ARIA CODE */
+const button = document.getElementById("mode-toggle");
+
+button.addEventListener("click", () => {
+    if (document.body.classList.contains("toggle")) {
+        button.setAttribute("aria-label", "Show Descriptive Text")
+    } else {
+        button.setAttribute("aria-label", "Hide Descriptive Text")
+    };
+});

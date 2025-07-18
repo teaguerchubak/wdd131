@@ -69,7 +69,6 @@ header {
 /* MAIN */
 main {
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -207,17 +206,11 @@ footer {
 /* FILTER BUTTONS */
 .filter-box {
     display: flex;
-    flex-direction: column;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    max-width: 400px;
-}
-
-.filter-box h1 {
-    padding-bottom: 1rem;
+    padding-bottom: .25rem;
 }
 
 .toggle .artwork-text {
@@ -242,16 +235,6 @@ footer {
 
 /* MEDIA QUERIES **/
 @media (min-width: 650px) {
-    main {
-        flex-direction: row;
-    }
-
-    .filter-box {
-        flex-direction: row;
-        padding-bottom: .25rem;
-        max-width: 650px;
-    }
-
     .gallery-container {
         max-width: 650px;
         column-count: 2;
@@ -267,16 +250,6 @@ footer {
 }
 
 @media (min-width: 1000px) {
-    main {
-        flex-direction: row;
-    }
-
-    .filter-box {
-        flex-direction: row;
-        padding-bottom: .25rem;
-        max-width: 1000px;
-    }
-
     .gallery-container {
         max-width: 1000px;
         column-count: 3;

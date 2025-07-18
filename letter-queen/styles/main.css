@@ -147,6 +147,8 @@ footer {
     align-items: center;
     justify-content: center;
     max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .gallery-container {
@@ -256,6 +258,8 @@ footer {
 
     .main-box {
         max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .filter-box {
@@ -285,6 +289,8 @@ footer {
 
     .main-box {
         max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .filter-box {

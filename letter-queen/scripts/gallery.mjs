@@ -6,7 +6,8 @@ const artwork = [
             "ink",
             "paper"
         ],
-        source: "./images/art-battle-royale.webp"
+        source: "./images/art-battle-royale.webp",
+        alt: "Battle Royale"
     },
     {   title: "Crawling Panther",
         year: 2023,
@@ -15,7 +16,8 @@ const artwork = [
             "ink",
             "paper"
         ],
-        source: "./images/art-crawling-panther.webp"
+        source: "./images/art-crawling-panther.webp",
+        alt: "Crawling Panther"
     },
     {   title: "Initial A",
         year: 2017,
@@ -24,7 +26,8 @@ const artwork = [
             "ink",
             "paper"
         ],
-        source: "./images/art-initial-a.webp"
+        source: "./images/art-initial-a.webp",
+        alt: "Initial A"
     },
     {   title: "Letter Queen Bird",
         year: 2024,
@@ -33,7 +36,8 @@ const artwork = [
             "ink",
             "paper"
         ],
-        source: "./images/art-letterqueen-bird-flourish.webp"
+        source: "./images/art-letterqueen-bird-flourish.webp",
+        alt: "Letter Queen Bird"
     },
     {   title: "Tattooing by Luis Keys",
         year: 2017,
@@ -41,7 +45,8 @@ const artwork = [
         medium: [
             "ink"
         ],
-        source: "./images/art-luis-keys-card.webp"
+        source: "./images/art-luis-keys-card.webp",
+        alt: "Tattooing by Luis Keys"
     },
     {   title: "Salt Lake Masonic Temple",
         year: 2020,
@@ -50,7 +55,8 @@ const artwork = [
             "paint",
             "gold leaf"
         ],
-        source: "./images/art-masonic-temple.webp"
+        source: "./images/art-masonic-temple.webp",
+        alt: "Salt Lake Masonic Temple"
     },
     {   title: "SJM Monogram",
         year: 2024,
@@ -58,7 +64,8 @@ const artwork = [
         medium: [
             "copper"
         ],
-        source: "./images/art-SJM-monogram.webp"
+        source: "./images/art-SJM-monogram.webp",
+        alt: "SJM Monogram"
     },
     {   title: "Skull Flourish",
         year: 2023,
@@ -67,7 +74,8 @@ const artwork = [
             "ink",
             "paper"
         ],
-        source: "./images/art-skull-flourish.webp"
+        source: "./images/art-skull-flourish.webp",
+        alt: "Skull Flourish"
     },
     {   title: "The Alphabet",
         year: 2016,
@@ -76,7 +84,8 @@ const artwork = [
             "ink",
             "paper"
         ],
-        source: "./images/art-the-alphabet.webp"
+        source: "./images/art-the-alphabet.webp",
+        alt: "The Alphabet"
     }
 ];
 

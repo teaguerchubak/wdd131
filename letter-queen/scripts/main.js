@@ -32,7 +32,7 @@ function tagsTemplate(tags) {
 function artworkTemplate(item) {
     return `
         <div class="artwork-container">
-            <img class="art-img" src="${item.source}">
+            <img class="art-img" src="${item.source}" alt="${item.alt}">
             <div class="artwork-text">
                 <h2 class="title">${item.title}</h2>
                 <p class="year">${item.year}</p>

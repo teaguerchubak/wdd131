@@ -41,6 +41,7 @@ header {
     height: 103px;
     border-right: 3px solid var(--secondary-color);
     border-left: 3px solid var(--secondary-color);
+    aspect-ratio: 932 / 319;
 }
 
 .nav {

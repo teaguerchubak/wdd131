@@ -37,8 +37,10 @@ header {
 }
 
 .logo {
-    max-width: 100%;
     width: 400px;
+    height: 137px;
+    border-right: 3px solid var(--secondary-color);
+    border-left: 3px solid var(--secondary-color);
 }
 
 .nav {
@@ -128,6 +130,11 @@ footer {
 
 .socials a:hover {
     background-color: var(--secondary-color);
+}
+
+.socials img {
+    height: 48px;
+    width: 48px;
 }
 
 
@@ -237,8 +244,8 @@ footer {
     }
 
     .logo {
-        max-width: 100%;
         width: 650px;
+        height: 222px;
     }
 }
 
@@ -252,7 +259,7 @@ footer {
     }
 
     .logo {
-        max-width: 100%;
         width: 1000px;
+        height: 342px;
     }
 }

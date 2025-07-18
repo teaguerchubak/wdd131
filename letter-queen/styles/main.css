@@ -38,7 +38,7 @@ header {
 
 .logo {
     max-width: 100%;
-    width: 1000px;
+    width: 400px;
 }
 
 .nav {
@@ -104,6 +104,7 @@ main {
 /* FOOTER */
 footer {
     background-color: var(--accent1-color);
+    border-top: 3px solid var(--secondary-color);
 }
 
 .footer-box {
@@ -139,9 +140,9 @@ footer {
 }
 
 .gallery-container {
-    max-width: 1000px;
+    max-width: 400px;
     justify-content: space-between;
-    column-count: 3;
+    column-count: 1;
     column-gap: 1rem;
     margin: 0 auto;
 }
@@ -225,3 +226,33 @@ footer {
 }
 
 
+/* MEDIA QUERIES **/
+@media (min-width: 650px) {
+    .gallery-container {
+        max-width: 650px;
+        column-count: 2;
+        justify-content: space-between;
+        column-gap: 1rem;
+        margin: 0 auto;
+    }
+
+    .logo {
+        max-width: 100%;
+        width: 650px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery-container {
+        max-width: 1000px;
+        column-count: 3;
+        justify-content: space-between;
+        column-gap: 1rem;
+        margin: 0 auto;
+    }
+
+    .logo {
+        max-width: 100%;
+        width: 1000px;
+    }
+}

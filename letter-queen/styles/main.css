@@ -38,7 +38,7 @@ header {
 
 .logo {
     width: 400px;
-    height: 137px;
+    height: 135px;
     border-right: 3px solid var(--secondary-color);
     border-left: 3px solid var(--secondary-color);
 }
@@ -237,6 +237,7 @@ footer {
 
 .filter-button {
     height: 30px;
+    width: 30px;
 }
 
 

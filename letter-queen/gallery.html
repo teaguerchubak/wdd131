@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The work of artist Skyler Chubak, aka The Letter Queen.">
+    <meta name="author" content="Teaguer Chubak">
+    <title>The Letter Queen</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/header.webp" alt="Letter Queen logo">
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-box">
+            <div class="filter-box">
+                <h1>Artwork Gallery</h1>
+                <div class="filters">
+                    <label for="filter">Filter Artwork:</label>
+                    <select name="filter" id="filter">
+                        <option value="all">All</option>
+                        <option value="flourish">Flourishes</option>
+                        <option value="print">Prints</option>
+                        <option value="business card">Business Cards</option>
+                        <option value="window sign">Windows</option>
+                        <option value="engraving">Engravings</option>
+                    </select>
+                    <button class="grid-button" id="mode-toggle"><img src="images/icon-grid.png"></button>
+                </div>
+            </div>
+            <div class="gallery-container">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-box">
+            <p>&copy 2025 Teaguer Chubak</p>
+
+            <div class="socials">
+                <a id="cartel-box" href="https://letterqueen.bigcartel.com/" target="_blank"><img id="cartel" src="images/icon-big-cartel.png" alt="Big Cartel"></a>
+                <a id="insta-box" href="https://www.instagram.com/letter.queen" target="_blank"><img id="insta" src="images/icon-instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

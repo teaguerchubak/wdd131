@@ -34,6 +34,7 @@ header {
     flex-wrap: nowrap;
     background-color: var(--accent1-color);
     align-items: center;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .logo {
@@ -50,6 +51,7 @@ header {
     background-color: var(--secondary-color);
     list-style-type: none;
     width: 100%;
+    max-width: 300px;
 }
 
 .nav a {
@@ -254,6 +256,10 @@ footer {
 
 /* MEDIA QUERIES **/
 @media (min-width: 650px) {
+    .nav {
+        max-width: 616px;
+    }
+
     main {
         flex-direction: row;
     }
@@ -307,6 +313,10 @@ footer {
 }
 
 @media (min-width: 1000px) {
+    .nav {
+        max-width: 932px;
+    }
+
     main {
         flex-direction: row;
     }
